@@ -519,7 +519,7 @@
   formattedContentCardData[@"url"] = card.urlString ?: [NSNull null];
   formattedContentCardData[@"openURLInWebView"] = @(card.openUrlInWebView);
 
-  formattedContentCardData[@"extras"] = [AppboyPlugin getJsonFromExtras:card.extras];
+  formattedContentCardData[@"extras"] = @("");
 
   if ([card isKindOfClass:[ABKCaptionedImageContentCard class]]) {
     ABKCaptionedImageContentCard *captionedCard = (ABKCaptionedImageContentCard *)card;
